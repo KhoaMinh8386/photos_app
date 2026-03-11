@@ -1,0 +1,25 @@
+{
+  "name": "photo-app-backend",
+  "version": "1.0.0",
+  "description": "Backend for Photo Upload and Comment Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.2",
+    "@supabase/supabase-js": "^2.39.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prisma": "^5.10.2"
+  }
+}
